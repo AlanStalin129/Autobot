@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎖 Main Channel🎖', url=f'{https://t.me/joinchat/axutdh3kmhExZjg1}')
+                        InlineKeyboardButton('🎖GROUP🎖', url=f'{https://t.me/vlIeYa9keYUxZDY1}')
                     ]
                     ]
                 await bot.send_cached_media(
