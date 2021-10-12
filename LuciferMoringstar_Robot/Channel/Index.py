@@ -86,4 +86,7 @@ GENRES = ["fun, fact",
          "Family, Drama",
          "Action, Adventure",
          "Film Noir",
+         "Horror, Triller",
+         "Romance, Triller",
+         "Sports,  Action",
          "Documentary"]
