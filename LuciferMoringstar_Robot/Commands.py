@@ -85,6 +85,7 @@ async def start(bot, message):
                 buttons = [
                     [
                         InlineKeyboardButton('😇OUR GROUP😇', url='https://t.me/vlIeYa9keYUxZDY1'),
+                        InlineKeyboardButton('😇OUR GROUP2😇', url='https://t.me/joinchat/Cxp4AZbUJdJkZGQ9'),
                     ]
                     ]
                 await bot.send_cached_media(
