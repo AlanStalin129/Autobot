@@ -30,8 +30,8 @@ Bot Owner Only
 ABOUT = """
 ➥ Name :  Auto Filter V3
     
-➥ Creator : [Alan Stalin](
-https://t.me/Alan_Sonu_Alan)
+➥ Creator : [Alan Stalin](@MOVIES_SQUAD_ADMIN)
+)
 
 ➥ Language : Python3
 
