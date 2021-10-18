@@ -53,7 +53,7 @@
          
             await update.reply_photo(
         "https://telegra.ph/file/61392836d3c6ad99a8c12.jpg",
-        caption=START_TEXT.format("**Hi, I'm Auto Filter Bot With Greater Abilities**",),
+        caption=START_TEXT.format("**Hi, I'm Auto Filter Bot With Greater Abilities**"),
         reply_markup=reply_markup,
     )
             "required": false
