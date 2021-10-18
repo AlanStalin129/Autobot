@@ -51,6 +51,7 @@
         "START_MSG": {
             "description": "Welcome message for start command",
             "value": "**Hi, I'm Auto Filter Bot With Greater Abilities**",
+            "Image": "https://telegra.ph/file/61392836d3c6ad99a8c12.jpg",
             "required": false
         },
         "USE_CAPTION_FILTER": {
