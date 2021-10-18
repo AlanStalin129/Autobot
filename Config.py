@@ -36,7 +36,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Messages
 default_start_msg = """
 **Hi, I'm Auto Filter V3**
-
+https://telegra.ph/file/61392836d3c6ad99a8c12.jpg
 Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
