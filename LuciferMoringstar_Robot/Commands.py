@@ -84,8 +84,10 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('😇OUR GROUP😇', url='https://t.me/vlIeYa9keYUxZDY1'),
-                        InlineKeyboardButton('😇OUR GROUP2😇', url='https://t.me/joinchat/Cxp4AZbUJdJkZGQ9'),
+                        InlineKeyboardButton('🖥️ Deploy Now 🖥️', url=f'{TUTORIAL}')
+                    ],
+                    [
+                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -110,13 +112,33 @@ async def start(bot, message):
             )
         )
     else:
-        
-                [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
-                ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
-                ]]
+        await message.reply_text(
+            START_MSG.format(message.from_user.mention),
+            parse_mode="Markdown",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton
+                            (
+                                "🔎Search Here", switch_inline_query_current_chat=''
+                            ),
+                        InlineKeyboardButton
+                            (
+                                "🤖More Botz", url="https://t.me/MT_Botz"
+                            )
+                    ],
+                    [
+                        InlineKeyboardButton
+                            (
+                                "🤔Help", callback_data="help"
+                            ),
+                        InlineKeyboardButton
+                            (
+                                "About🤠", callback_data="about"
+                            )
+                    ]
+                ]
             )
         )
         StopPropagation
@@ -164,11 +186,8 @@ async def broadcast_handler_open(_, m):
 
 @Client.on_message(filters.private & filters.command("stats"))
 async def sts(c, m):
-    if m.from_user.id not in ADMIN_ID:
-        await m.delete()
-        return
     await m.reply_text(
-        text=f"**Total Users in Database 📂:** `{await db.total_users_count()}`\n\n**Total Users with Notification Enabled 🔔 :** `{await db.total_notif_users_count()}`",
+        text=f"**Total Users in Database 📂:** `{await db.total_users_count()}``",
         parse_mode="Markdown",
         quote=True
     )
@@ -327,8 +346,10 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            
-            InlineKeyboardButton('😇OUR GROUP😇', url='https://t.me/vlIeYa9keYUxZDY1'),
-        ]
-        ]
+            InlineKeyboardButton
+                (
+                     'Video', url=f'{TUTORIAL}'
+                )
+        ] 
+    ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
