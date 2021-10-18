@@ -49,11 +49,11 @@
             "required": false
         },
         "START_MSG": {
-            "description": "Welcome message for start command",
-            "value": "**Hi, I'm Auto Filter Bot With Greater Abilities**",
-            "await update.reply_photo(
+            "description": "Welcome message for start കമാൻ
+         
+            await update.reply_photo(
         "https://telegra.ph/file/61392836d3c6ad99a8c12.jpg",
-        caption=START_TEXT.format(update.from_user.first_name),
+        caption=START_TEXT.format("**Hi, I'm Auto Filter Bot With Greater Abilities**",),
         reply_markup=reply_markup,
     )
             "required": false
