@@ -112,9 +112,8 @@ async def start(bot, message):
             )
         )
     else:
-     await cmd.reply_photo(
-            photo=(https://telegra.ph/file/61f07fd0029cb20159118.jpg)
-            caption=START_MSG(message.from_user.mention),
+     Send_message = await bot.send_photo( chat_id=update.chat.id,
+ photo="https://telegra.ph/file/61392836d3c6ad99a8c12.jpg",START_MSG.format(message.from_user.mention),
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
