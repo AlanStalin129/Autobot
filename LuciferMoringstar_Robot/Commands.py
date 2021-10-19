@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔊JOIN UPDATE CHANNEL🔊', url='https://t.me/joinchat/axutdh3kmhExZjg1')
+                        InlineKeyboardButton('🖥️ Deploy Now 🖥️', url=f'{TUTORIAL}')
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
@@ -112,13 +112,12 @@ async def start(bot, message):
             )
         )
     else:
-     await message.reply_text(
+        await message.reply_text(
             START_MSG.format(message.from_user.mention),
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-          
-                  [
+                [
                     [
                         InlineKeyboardButton
                             (
@@ -126,7 +125,7 @@ async def start(bot, message):
                             ),
                         InlineKeyboardButton
                             (
-                                '🔊MAIN CHANNEL🔊', url="https://t.me/joinchat/ISZ9R5CdkgBlMzNl"
+                                "🤖More Botz", url="https://t.me/MT_Botz"
                             )
                     ],
                     [
@@ -351,6 +350,6 @@ async def bot_info(bot, message):
                 (
                      'Video', url=f'{TUTORIAL}'
                 )
-        ] 
+        ]
     ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
